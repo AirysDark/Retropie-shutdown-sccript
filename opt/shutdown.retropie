@@ -5,13 +5,14 @@
 FRONTEND="emulationstation"
 FRONTEND4="emulationstatio"
 EMULATORS="retroarch"
+SSH="ssh"
 
 
 button="$1"
 case "$button" in
     power)
-        # terminate running emulator and frontend then poweroff
-        killall --wait $EMULATORS $FRONTEND $FRONTEND4
+        # terminate running emulator and frontend an ssh then poweroff
+        killall --wait $EMULATORS $FRONTEND $FRONTEND4 $SSH
         shutdown -h now
         ;;
 
