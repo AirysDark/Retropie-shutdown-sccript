@@ -1,0 +1,40 @@
+#!/bin/sh
+# RetroFlag Pi Case safe shutdown SysVinit service
+
+NAME="picase"
+BIN="/opt/retroflag-picase/service.py"
+PID_FILE="/var/run/$NAME.pid"
+
+
+# start the service
+start() {
+    start-stop-daemon                       \
+        --start --background --exec "$BIN"  \
+        --make-pidfile --pidfile "$PID_FILE"
+}
+
+# stop the service
+stop () {
+    start-stop-daemon --stop --pidfile "$PID_FILE"
+}
+
+
+action="$1"
+case "$action" in
+    start)
+        start
+        ;;
+
+    stop)
+        stop
+        ;;
+
+    restart)
+        stop
+        start
+        ;;
+
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        ;;
+esac
