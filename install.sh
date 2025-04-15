@@ -4,6 +4,7 @@
 PI_CONFIG_FILE="/boot/config.txt"
 INITD_DIR="/etc/init.d"
 SYSTEMD_DIR="/etc/systemd/system"
+ETC_DIR="/etc"
 
 INSTALL_DIR="/opt/retroflag-picase"  # hard coded in etc/* files
 
@@ -48,18 +49,10 @@ install_scripts() {
 # install Systemd service file and enable/start service
 install_systemd_service() {
     echo "Installing Systemd service."
-    install -m 644 -T "./etc/picase.systemd" "$SYSTEMD_DIR/picase.service"
+    install -m 644 -T "$ETC_DIR/picase.systemd" "$SYSTEMD_DIR/picase.service"
     systemctl daemon-reload
     systemctl enable picase.service
     systemctl start picase.service
-}
-
-# install Recalbox-style SysVinit service file and start service
-install_recalbox_service() {
-    echo "Installing Recalbox-style SysVinit service."
-    service_file="$INITD_DIR/S30picase"
-    install "./etc/picase.sysvinit" "$service_file"
-    "$service_file" start
 }
 
 # prompt for y/n input until a valid selection is given
@@ -93,21 +86,7 @@ case "$os" in
         install_scripts retropie
         install_systemd_service
         ;;
-
-    recalbox)
-        remount_rw
-        enable_uart
-        install_scripts recalbox
-        install_recalbox_service
-        ;;
-
-    osmc)
-        enable_uart
-        install_osmc_prereqs
-        install_scripts osmc
-        install_systemd_service
-        ;;
-
+        
     *)
         echo "Could not determine operating system."
         exit 1
