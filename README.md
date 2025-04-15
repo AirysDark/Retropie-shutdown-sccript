@@ -16,9 +16,21 @@ connected to the internet.
 ### RetroPie
 The following steps are performed on a Raspberry Pi running RetroPie:
 
+login as root user
 1. Press F4 to close EmulationStation
-2. [Download the shutdown script](#download-the-shutdown-script)
-3. When prompted enter "Y" to reboot
+2. ```shell
+   wget https://github.com/AirysDark/Retropie-shutdown-sccript/archive/refs/heads/main.zip
+   ```
+3. ```shell
+   unzip main.zip
+   ```
+4. ```shell
+   cd Retropie-shutdown-sccript-main
+   ```
+5. ```shell
+   sudo sh install.sh retropie
+   ```
+6. When prompted enter "Y" to reboot
 
 
 ### Download the Shutdown Script
