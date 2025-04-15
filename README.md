@@ -46,9 +46,9 @@ The following steps are performed on a Raspberry Pi running OSMC:
 Once you have shell access, download the shutdown script by running:
 
 ```shell
-wget https://gitlab.com/unixispower/retroflag-picase/-/archive/master/retroflag-picase-master.zip
-unzip retroflag-picase-master.zip
-cd retroflag-picase-master
+wget https://github.com/AirysDark/Retropie-shutdown-sccript/archive/refs/heads/main.zip
+unzip Retropie-shutdown-sccript-main.zip
+cd Retropie-shutdown-sccript-main
 ```
 
 Then continue the steps in the section that sent you here.
