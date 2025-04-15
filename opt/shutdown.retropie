@@ -3,7 +3,7 @@
 # This script is executed by service.py when a case button is pressed.
 
 FRONTEND="emulationstation"
-EMULATORS="retroarch mupen64plus"
+EMULATORS="retroarch"
 
 
 button="$1"
