@@ -22,28 +22,6 @@ The following steps are performed on a Raspberry Pi running RetroPie:
 3. Run `sudo sh install.sh retropie`
 4. When prompted enter "Y" to reboot
 
-### Recalbox
-The following steps are performed on a Raspberry Pi running Recalbox:
-
-1. Press F4 to close EmulationStation
-2. Wait for the Recalbox splash screen to appear
-3. Press ALT+F2 to switch to a login shell
-4. Login with username `root` and password `recalboxroot`
-5. [Download the shutdown script](#download-the-shutdown-script)
-6. Run `sh install.sh recalbox`
-7. When prompted enter "Y" to reboot.
-
-### OSMC
-The following steps are performed on a Raspberry Pi running OSMC:
-
-1. Navigate to the power icon in Kodi
-2. Select Exit/Quit
-3. Wait for the OSMC splash screen to appear
-4. Press ESC on your keyboard while the spash screen is shown
-4. Login with username `osmc` and password `osmc`
-6. [Download the shutdown script](#download-the-shutdown-script)
-7. Run `sudo sh install.sh osmc`
-8. When prompted enter "Y" to reboot.
 
 ### Download the Shutdown Script
 Once you have shell access, download the shutdown script by running:
