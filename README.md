@@ -1,3 +1,5 @@
+this is not mine. i take no credit.
+
 # RetroFlag Pi Case Safe Shutdown Script
 Reimplementation of the [official shutdown script](
 https://github.com/RetroFlag/retroflag-picase). This version of the
