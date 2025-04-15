@@ -33,19 +33,6 @@ login as root user
 6. When prompted enter "Y" to reboot
 
 
-### Download the Shutdown Script
-Once you have shell access, download the shutdown script by running:
-
-```shell
-wget https://github.com/AirysDark/Retropie-shutdown-sccript/archive/refs/heads/main.zip
-unzip main.zip
-cd Retropie-shutdown-sccript-main
-sudo sh install.sh retropie
-```
-
-Then continue the steps in the section that sent you here.
-
-
 ## Configuration
 The shutdown script runs as a service and executes a shell script when a case
 button is pressed. You can modify the script `/opt/retroflag-picase/shutdown.sh`
