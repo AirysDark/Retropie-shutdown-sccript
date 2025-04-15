@@ -1,6 +1,10 @@
 this is not mine. i take no credit.
 https://gitlab.com/unixispower/retroflag-picase
 
+have made some tweaks and modifications to the code.
+1. now just for retroflag cases was seeing error being a multI script
+2. fix hang when shutting down. stop ssh. add more exacutions.
+
 # RetroFlag Pi Case Safe Shutdown Script
 Reimplementation of the [official shutdown script](
 https://github.com/RetroFlag/retroflag-picase). This version of the
