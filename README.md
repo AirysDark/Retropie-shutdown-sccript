@@ -50,7 +50,7 @@ Once you have shell access, download the shutdown script by running:
 
 ```shell
 wget https://github.com/AirysDark/Retropie-shutdown-sccript/archive/refs/heads/main.zip
-unzip Retropie-shutdown-sccript-main.zip
+unzip main.zip
 cd Retropie-shutdown-sccript-main
 ```
 
