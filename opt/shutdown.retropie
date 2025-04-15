@@ -3,6 +3,7 @@
 # This script is executed by service.py when a case button is pressed.
 
 FRONTEND="emulationstation"
+FRONTEND4="emulationstatio"
 EMULATORS="retroarch"
 
 
@@ -10,7 +11,7 @@ button="$1"
 case "$button" in
     power)
         # terminate running emulator and frontend then poweroff
-        killall --wait $EMULATORS $FRONTEND
+        killall --wait $EMULATORS $FRONTEND $FRONTEND4
         shutdown -h now
         ;;
 
