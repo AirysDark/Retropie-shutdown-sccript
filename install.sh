@@ -29,14 +29,6 @@ enable_uart() {
     fi
 }
 
-# install service prerequisites for OSMC
-install_osmc_prereqs() {
-    apt-get update
-    apt-get install -y python-pip python-setuptools python-dev gcc
-    pip install wheel
-    pip install rpi.gpio
-}
-
 # install service script and specified version of the shutdown script
 install_scripts() {
     echo "Installing scripts."
