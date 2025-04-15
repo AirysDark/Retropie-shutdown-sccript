@@ -1,8 +1,0 @@
-[Unit]
-Description=RetroFlag Pi Case safe shutdown
-
-[Service]
-ExecStart=/opt/retroflag-picase/service.py
-
-[Install]
-WantedBy=multi-user.target
