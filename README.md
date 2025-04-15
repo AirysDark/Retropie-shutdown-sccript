@@ -1,4 +1,5 @@
 this is not mine. i take no credit.
+https://gitlab.com/unixispower/retroflag-picase
 
 # RetroFlag Pi Case Safe Shutdown Script
 Reimplementation of the [official shutdown script](
