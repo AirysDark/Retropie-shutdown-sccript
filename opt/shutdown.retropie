@@ -7,7 +7,6 @@ FRONTEND4="emulationstatio"
 EMULATORS="retroarch"
 SSH="ssh"
 
-
 button="$1"
 case "$button" in
     power)
