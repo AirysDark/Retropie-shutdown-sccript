@@ -41,7 +41,7 @@ install_scripts() {
 # install Systemd service file and enable/start service
 install_systemd_service() {
     echo "Installing Systemd service."
-    install -m 644 -T "$ETC_DIR/picase.systemd" "$SYSTEMD_DIR/picase.service"
+    install -m 644 -T "./etc/picase.systemd" "$SYSTEMD_DIR/picase.service"
     systemctl daemon-reload
     systemctl enable picase.service
     systemctl start picase.service
