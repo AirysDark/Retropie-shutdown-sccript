@@ -18,8 +18,7 @@ The following steps are performed on a Raspberry Pi running RetroPie:
 
 1. Press F4 to close EmulationStation
 2. [Download the shutdown script](#download-the-shutdown-script)
-3. Run `sudo sh install.sh retropie`
-4. When prompted enter "Y" to reboot
+3. When prompted enter "Y" to reboot
 
 
 ### Download the Shutdown Script
@@ -29,6 +28,7 @@ Once you have shell access, download the shutdown script by running:
 wget https://github.com/AirysDark/Retropie-shutdown-sccript/archive/refs/heads/main.zip
 unzip main.zip
 cd Retropie-shutdown-sccript-main
+sudo sh install.sh retropie
 ```
 
 Then continue the steps in the section that sent you here.
