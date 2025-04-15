@@ -6,8 +6,7 @@ Reimplementation of the [official shutdown script](
 https://github.com/RetroFlag/retroflag-picase). This version of the
 script utilizes the power switch to shut down the Pi and the reset switch to
 close the running emulator in RetroArch (if running RetroPie or Recalbox).
-This script has been tested with RetroPie 4.4, Recalbox 6.0-DragonBlaze, and
-OSMC 2019.06-1 .
+This script has been tested with RetroPie 4.8, 2025.04-16 .
 
 
 ## Installation
