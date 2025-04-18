@@ -45,7 +45,7 @@ install_systemd_service() {
     install -m 644 -T "./etc/ADRF.systemd" "$SYSTEMD_DIR/ADRF.service"
     systemctl daemon-reload
     systemctl enable ADRF.service
-    systemctl start ADRFservice
+    systemctl start ADRF.service
 }
 
 # prompt for y/n input until a valid selection is given
