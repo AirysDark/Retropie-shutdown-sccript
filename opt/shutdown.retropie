@@ -1,6 +1,7 @@
 #!/bin/sh
 # Retroflag Pi Case shutdown script for RetroPie
 # This script is executed by service.py when a case button is pressed.
+# Script modified By AirysDark
 
 FRONTEND="emulationstation"
 FRONTEND4="emulationstatio"
