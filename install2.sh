@@ -35,7 +35,7 @@ install_scripts() {
     echo "Installing scripts."
     os="$1"
     install -d "$INSTALL_DIR"
-    install "./opt/service.py" "$INSTALL_DIR"
+    install "./opt/servADRF.py" "$INSTALL_DIR"
     install "./opt/shutdown.$os" "$INSTALL_DIR/shutdown.sh"
 }
 
