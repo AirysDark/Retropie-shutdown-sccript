@@ -1,5 +1,6 @@
 #!/bin/sh
 # Install script for RetroFlag Pi Case safe shutdown script
+# Script modified By AirysDark
 
 PI_CONFIG_FILE="/boot/config.txt"
 INITD_DIR="/etc/init.d"
