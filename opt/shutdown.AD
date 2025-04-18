@@ -1,0 +1,24 @@
+#!/bin/sh
+# Retroflag Pi Case shutdown script for RetroPie
+# This script is executed by service.py when a case button is pressed.
+# Script modified By AirysDark
+
+FRONTEND="emulationstation"
+FRONTEND4="emulationstatio"
+EMULATORS="retroarch"
+SSH="ssh"
+FileManager="MC"
+
+button="$1"
+case "$button" in
+    power)
+        # terminate running emulator and frontend an ssh then poweroff
+        killall --wait $EMULATORS $FRONTEND $FRONTEND4 $SSH $FileManager
+        shutdown -h now
+        ;;
+
+    reset)
+        # terminate running emulator
+        killall --wait $EMULATORS
+        ;;
+esac
