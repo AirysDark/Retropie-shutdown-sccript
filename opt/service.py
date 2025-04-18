@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # RetroFlag Pi Case safe shutdown script
 # Compatible with Python 2.7 and 3.
+# Script modified By AirysDark
 
 import os
 import signal
