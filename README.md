@@ -1,3 +1,4 @@
+## RUN AS ROOT USER ##
 this is not mine. i take no credit.
 https://gitlab.com/unixispower/retroflag-picase
 
