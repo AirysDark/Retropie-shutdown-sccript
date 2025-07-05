@@ -22,13 +22,15 @@ connected to the internet.
 The following steps are performed on a Raspberry Pi running RetroPie:
 
 login as root user
-1. Press F4 to close EmulationStation
-2. ```shell
-   wget https://github.com/AirysDark/Retropie-shutdown-sccript/archive/refs/heads/main.zip
+Press F4 to close EmulationStation
+
+```shell
+wget https://github.com/AirysDark/Retropie-shutdown-sccript/archive/refs/heads/main.zip
 unzip main.zip
 cd Retropie-shutdown-sccript-main
 sudo sh install.sh retropie
-   ```
+```
+
 3. When prompted enter "Y" to reboot
 
 
