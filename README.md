@@ -30,7 +30,16 @@ unzip main.zip
 cd Retropie-shutdown-sccript-main
 sudo sh install.sh retropie
 ```
-
+dietpi rpi3
+```bash
+# from any folder on your DietPi box
+wget -O dietpi-picase-patched.zip \
+  https://github.com/AirysDark/Retropie-shutdown-sccript/raw/main/dietpi-picase-patched.zip
+unzip dietpi-picase-patched.zip -d dietpi-picase-patched
+cd dietpi-picase-patched
+sudo ./dietpi_install.sh
+sudo systemctl status retroflag-picase.service
+```
 3. When prompted enter "Y" to reboot
 
 
