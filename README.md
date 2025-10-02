@@ -40,6 +40,19 @@ cd dietpi-picase-patched
 sudo ./dietpi_install.sh
 sudo systemctl status retroflag-picase.service
 ```
+dietpi rp4
+```bash
+# Download the ZIP from your repo
+wget -O rpi4-picase.zip \
+  https://github.com/AirysDark/Retropie-shutdown-sccript/raw/main/rpi4-picase.zip
+
+# Install
+unzip rpi4-picase.zip -d rpi4-picase
+cd rpi4-picase
+sudo ./rpi4_install.sh
+sudo systemctl status retroflag-picase.service
+```
+
 3. When prompted enter "Y" to reboot
 
 
